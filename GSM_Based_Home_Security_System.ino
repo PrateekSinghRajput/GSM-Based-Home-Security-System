@@ -4,12 +4,12 @@
 
 #include <SoftwareSerial.h>
 const String PHONE = "+918830584864";
-#define rxPin 11
-#define txPin 10
+#define rxPin 2
+#define txPin 3
 
 SoftwareSerial sim800(rxPin,txPin);
 
-int pir_sensor = 8;
+int pir_sensor = 6;
 
 void setup() {
   pinMode(pir_sensor, INPUT);    
